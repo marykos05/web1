@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+<title> HTML 5 страница </title>
+    </head>
+    <body>
+          <ul>
+            <li> <a href = "http://kubsu.ru/"> КубГУ </a> </li>
+            <li> <a href = "https://kubsu.ru/"> КубГУ </a></li> 
+            <li> <a href = "https://kubsu.ru/"><img src="kub.jpg" width="400" height="300"/></a> </li>
+            <li> <a href = "vntrstr.html"> Внутренняя сокращенная ссылка </a> </li>
+            <li> <a href = "index.html" > Внутренняя ссылка сокращенная </a> </li>
+            <li> <a href = "#myform"> Форма </a></li>
+            <li> <a href = "index.html?a=1&b=2&c=3" > Параметры </a></li>
+            <li> <a href = "index.html?id=102949" > id </a></li>
+            <li> <a href = "second.html" > Ссылка на страницу в той же папке </a></li>
+            <li> <a href = "about.html"> Об университете </a></li>
+            <li> <a href = "../index.html"> Папка выше </a></li>
+            <li> <a href = "../../index.html"> Две папки выше </a></li>
+            <li> <p> Контекстная <a href = "https://sape.omnidesk.ru/l_rus/knowledge_base/item/273403?sid=51111">ссылка</a> внутри абзаца </p></li>
+            <li> <a href = "https://www.kubsu.ru/ru/contacts"> Контакты на внешнем сайте </a></li>
+            <li><map name="primary">
+                <area shape="circle" coords="75,75,75" href="left.html" title="circle"/>
+                <area shape="rect" coords="200,50,300,100" href="right.html" title="rect" />
+              </map>
+              <img usemap="#primary" src="kub.jpg" width="400" height="300" alt="400 x 300" /></li>
+              <li> <a href=""> Пустая ссылка (текущая стр) </li>
+              <li> <a> Ссылка без href </a></li>
+              <li><a href="http://kubsu.ru/" rel="nofollow"> Сюда нельзя </a></li>
+              <li><noindex> <a href = "http://kubsu.ru/"> Не индексировать</a></noindex></li>
+              <li> <ol> <li> <a href = "" title = "Страница 1"> Страница 1</a></li>
+                <li> <a href = "" title = "Страница 2"> Страница 2</a></li>
+                <li> <a href = "" title = "Страница 3"> Страница 3</a></li></ol></li>
+              <li> <a href = "ftp://username:password@kubsu.ru/"> КубГу ФТП</a></li>
+
+
+          </ul>
+          <section id="myform"></section>
+          <form action = "" method = "POST">
+            <label>
+                ФИО: <br />
+                <input name = "name" type = "text"
+                value = "Киреев Иван Васильевич"/>
+            </label><br />
+            <label> 
+                Телефон: <br />
+                <input name = "telephone" type = "tel"
+                value = "8-800-555-35-35"/>
+            </label><br />
+            <label>
+                E-mail: <br />
+                <input name = "email" type = "email"
+                value = "example@mail.ru"/>
+            </label><br />
+            <label>
+                Дата: <br />
+                <input name = "date" type = "date"
+                value = "2024/09/16" />
+            </label><br />
+                Пол: <br />
+                <label><input name = "sex" type = "radio" value = "Женский" /> Женский </label><br />
+                <label><input name = "sex" type = "radio" value = "Мужской" /> Мужской </label><br />
+                <label for="lang">Выберите любимый язык программирования:</label><br />
+                    <select id="lang" name="lang" multiple>
+                    multiple="multiple">
+                    <option value="Pascal"> Pascal </option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                    </select>
+                <label><br />
+                    Биография:<br />
+                        <textarea name="biography">...</textarea></label><br />
+                    С контрактом ознакомлен (а) :<br />
+                        <label><input type="checkbox" checked="checked"
+                        name="contract" />
+                        Ознакомлен(а)</label><br />
+                <input type="submit" value="Отправить" />
+          </form>
+    </body>
+</html>
